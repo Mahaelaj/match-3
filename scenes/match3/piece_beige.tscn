@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccce8hya05reh"]
+
+[ext_resource type="PackedScene" uid="uid://dfkn1fabugy0" path="res://scenes/match3/piece.tscn" id="1_jpfpt"]
+[ext_resource type="Script" path="res://scripts/match3/match_piece.gd" id="2_82cic"]
+
+[node name="PieceBeige" instance=ExtResource("1_jpfpt")]
+script = ExtResource("2_82cic")
+color = "beige"

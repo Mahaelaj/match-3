@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfkn1fabugy0"]
+
+[ext_resource type="Script" path="res://scripts/match3/piece.gd" id="1_ujlbe"]
+[ext_resource type="Texture2D" uid="uid://detymhvfkixxn" path="res://assets/images/match3Orbs/alienBeige_round.png" id="2_apx4j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mxugb"]
+size = Vector2(50, 50)
+
+[node name="Piece" type="Area2D"]
+script = ExtResource("1_ujlbe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_apx4j")
+offset = Vector2(35, -35)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(35, -35)
+shape = SubResource("RectangleShape2D_mxugb")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

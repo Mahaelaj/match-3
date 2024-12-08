@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bufrieh2kpakk"]
+
+[ext_resource type="Script" path="res://scripts/match3/grid.gd" id="1_wpgb3"]
+
+[node name="Grid" type="Node2D"]
+script = ExtResource("1_wpgb3")
+
+[node name="PiecesContainer" type="Node2D" parent="."]

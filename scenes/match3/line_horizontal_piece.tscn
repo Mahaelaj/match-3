@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://olnfj03oisk8"]
+
+[ext_resource type="PackedScene" uid="uid://dfkn1fabugy0" path="res://scenes/match3/piece.tscn" id="1_mydmo"]
+[ext_resource type="Texture2D" uid="uid://dl4bip8t3x7qy" path="res://assets/images/match3Orbs/alienBlue_square.png" id="2_jd7um"]
+[ext_resource type="Script" path="res://scripts/match3/special_piece.gd" id="3_qvi3t"]
+
+[node name="LineHorizontalPiece" instance=ExtResource("1_mydmo")]
+script = ExtResource("3_qvi3t")
+type = 1
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_jd7um")
